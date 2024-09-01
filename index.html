@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Polling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Church Polling System</h1>
+
+    <!-- Sector selection combobox -->
+    <div class="sector-selection">
+        <label for="sectorSelect">Select Sector:</label>
+        <select id="sectorSelect" onchange="filterCandidates()">
+            <option value="1" selected>Sector 1</option>
+            <option value="2">Sector 2</option>
+            <option value="3">Sector 3</option>
+            <option value="4">Sector 4</option>
+            <option value="5">Sector 5</option>
+            <option value="6">Sector 6</option>
+            <option value="7">Sector 7</option>
+            <option value="8">Sector 8</option>
+            <option value="9">Sector 9</option>
+            <option value="10">Sector 10</option>
+            <option value="11">Sector 11</option>
+            <option value="12">Sector 12</option>
+            <option value="13">Sector 13</option>
+            <option value="14">Sector 14</option>
+        </select>
+    </div>
+
+    <!-- Table for displaying candidates -->
+    <table id="candidatesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Polls</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Input field for entering candidate IDs -->
+    <div class="input-container">
+        <label for="candidateIds">Enter Candidate IDs (space separated):</label>
+        <input type="text" id="candidateIds" placeholder="e.g., 1 2 3 4">
+        <button id="submitVotesButton" type="button">Submit Votes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
